@@ -12,54 +12,38 @@
                   </a>
                 </div>
                 <div class="flex flex-wrap flex-grow mt-8 -mb-10 text-left md:pl-20 md:mt-0 ">
-                  <div class="w-full px-4 lg:w-1/3 md:w-1/2">
-                    <h1 class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font"> Teste </h1>
+                  <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h1 class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font"> Empresas </h1>
                     <nav class="mb-10 space-y-4 list-none">
                       <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste</a>
-                      </li>
-                      <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste</a>
-                      </li>
-                      <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste</a>
-                      </li>
-                      <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste</a>
+                        <NuxtLink to="/empresa" class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Planos Empresariais</NuxtLink>
                       </li>
                     </nav>
                   </div>
-                  <div class="w-full px-4 lg:w-1/3 md:w-1/2">
-                    <h1 class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font"> Teste </h1>
+                  <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h1 class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font"> Especialistas </h1>
                     <nav class="mb-10 space-y-4 list-none">
                       <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste 2</a>
-                      </li>
-                      <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste 2</a>
-                      </li>
-                      <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste 2</a>
-                      </li>
-                      <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste 2</a>
+                        <NuxtLink to="/profissional" class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Quero me Cadastrar</NuxtLink>
                       </li>
                     </nav>
                   </div>
-                  <div class="w-full px-4 lg:w-1/3 md:w-1/2">
-                    <h1 class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font"> Teste </h1>
+                  <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h1 class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font"> Ajuda </h1>
                     <nav class="mb-10 space-y-4 list-none">
                       <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste 3</a>
+                        <NuxtLink to="/" class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Política de Privacidade</NuxtLink>
                       </li>
                       <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste 3</a>
+                        <NuxtLink to="/" class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Termos de Uso</NuxtLink>
                       </li>
+                    </nav>
+                  </div>
+                  <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h1 class="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font"> Suporte </h1>
+                    <nav class="mb-10 space-y-4 list-none">
                       <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste 3</a>
-                      </li>
-                      <li>
-                        <a class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">Teste 3</a>
+                        <NuxtLink to="/" class=" mr-1 text-sm text-black transition duration-500 ease-in-out transform rounded-sm focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">contato@qualipsico.com.br</NuxtLink>
                       </li>
                     </nav>
                   </div>
