@@ -5,25 +5,6 @@
 </template>
 
 <style>
-html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -31,3 +12,64 @@ html {
   margin: 0;
 }
 </style>
+
+<script>
+import { mapGetters } from "vuex";
+
+export default {
+  name: "Layout",
+
+  data() {
+    return {
+      loggedUser: "",
+      auth: false
+    };
+  },
+
+  async created() {
+    try {
+      const response = await fetch("http://localhost/api/me", {
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        mode: "no-cors"
+      });
+
+      const content = await response.json();
+
+      console.log(content);
+
+      this.loggedUser = content;
+      alert(content.name);
+
+      this.$nuxt.$emit("auth", true);
+    } catch (e) {
+      this.message = "You are not logged in";
+      this.$nuxt.$emit("auth", false);
+    }
+  },
+
+  mounted() {
+    this.$nuxt.$on("auth", auth => {
+      console.log(auth);
+
+      this.auth = auth;
+    });
+  },
+
+  methods: {
+    async logout() {
+      await fetch("http://localhost/api/logout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include"
+      });
+
+      await this.$router.push("/auth/login");
+    }
+  },
+
+  computed: {
+    ...mapGetters(["isAuthenticated", "loggedUser", "loggedUserRole"])
+  }
+};
+</script>
